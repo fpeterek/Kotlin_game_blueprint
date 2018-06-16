@@ -66,10 +66,10 @@ class Square {
 
 
 
-        force -= if (force > 0.0) {
+        force -= if (force > 0.1) {
             0.1 + (5.0 - force) / 20.0
         } else {
-            0.1 + (0 - force) / 20.0
+            0.2 + (0 - force) / 20.0
         }
 
         force = Math.max(-7.0, force)
